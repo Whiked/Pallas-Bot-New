@@ -104,5 +104,7 @@
 - 原始项目 [Pallas-Bot](https://github.com/MistEO/Pallas-Bot)
 - 基于原项目提炼的插件版本 [nonebot-plugin-pallas-repeater](https://github.com/Redmomn/nonebot-plugin-pallas-repeater)
 
+感谢以上两位大神，我只是cv过来然后做了些简单的改动，在其基础上修复了一些bug以及扩充功能，包括重新实现最原初牛牛的一些其他功能。
+
 ## 📄 协议
 本项目采用 [MIT License](LICENSE)
