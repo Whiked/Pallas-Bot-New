@@ -25,17 +25,21 @@
 
 ### 快速部署
 您需要先创建一个自己的nonebot2机器人，这非常简单！可以参考下面的文档：[NoneBot2](https://nonebot.dev/docs/quick-start) <br>
+
 建议选择simple模板，适配器建议选择FastAPI以及HTTPX，方便后续添加其他插件可以正常使用。或者使用项目内的bot.py，里面自定义了一个httpx适配器。驱动器选择onebotv11启动器。<br>
+
 在进行一些基本bot设置后，你就可以在bot目录下手动拖入项目内的resource和src文件夹了，此时启动bot就可以自动加载这些插件。你也可以浏览nonebot插件商店来自由的安装你喜欢的插件。<br>
 
 
 ## 🔧 配置说明
 如果您想要牛牛偷群u的id，那么请在对应目录下，修改期望概率，这是可选的，其他api key或者缓存目录设置则是必须的。<br>
+如果您暂时没有两家的api key，又确实不需要`牛牛做梦`、`牛牛我问你`以及`牛牛锐评`功能，那么可以在`src\plugins\`目录下手动移除`chat`以及`dream`文件夹，这不会影响其他功能的使用。<br>
+##### 括弧建议加上这几个功能，还是挺好玩的（<br>
 音频文件也是可选添加的，不添加仅仅只会导致牛牛唱歌功能没有东西发出来而已。<br>
 
 ### API密钥配置
-在src\plugins\chat目录下，修改代码添加您自己的文心key和deepseek key。<br>
-在src\plugins\dream目录下，修改代码添加您自己的文心key。
+在`src\plugins\chat`目录下，修改代码添加您自己的文心key和deepseek key。<br>
+在`src\plugins\dream`目录下，修改代码添加您自己的文心key。
 
 ### 功能参数调整
 | 配置文件路径 | 功能说明 |
