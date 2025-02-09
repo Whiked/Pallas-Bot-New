@@ -1,3 +1,9 @@
+<div align="center">
+  <img alt="LOGO" src="https://user-images.githubusercontent.com/18511905/195892994-c1a231ec-147a-4f98-ba75-137d89578247.png" width="360" height="270"/>
+  
+  ###### 图片来自于 [Pallas-Bot](https://github.com/MistEO/Pallas-Bot)
+</div>
+
 # Pallas-Bot Repeater Plugin
 
 [![NoneBot](https://img.shields.io/badge/NoneBot-2.0.0rc3-green.svg)](https://github.com/nonebot/nonebot2)
@@ -18,25 +24,25 @@
 - 推荐安装 `jieba-fast` 加速分词
 
 ### 快速部署
-您需要先创建一个自己的nonebot2机器人，这非常简单！可以参考下面的文档：[NoneBot2](https://nonebot.dev/docs/quick-start)
-建议选择simple模板，适配器建议选择FastAPI以及HTTPX，方便后续添加其他插件可以正常使用。或者使用项目内的bot.py，里面自定义了一个httpx适配器。驱动器选择onebotv11启动器。
-在进行一些基本bot设置后，你就可以在bot目录下手动拖入项目内的resource和src文件夹了，此时启动bot就可以自动加载这些插件。你也可以浏览nonebot插件商店来自由的安装你喜欢的插件。
+您需要先创建一个自己的nonebot2机器人，这非常简单！可以参考下面的文档：[NoneBot2](https://nonebot.dev/docs/quick-start) <br>
+建议选择simple模板，适配器建议选择FastAPI以及HTTPX，方便后续添加其他插件可以正常使用。或者使用项目内的bot.py，里面自定义了一个httpx适配器。驱动器选择onebotv11启动器。<br>
+在进行一些基本bot设置后，你就可以在bot目录下手动拖入项目内的resource和src文件夹了，此时启动bot就可以自动加载这些插件。你也可以浏览nonebot插件商店来自由的安装你喜欢的插件。<br>
 
 
 ## 🔧 配置说明
-如果您想要牛牛偷群u的id，那么请在对应目录下，修改期望概率，这是可选的，其他api key或者缓存目录设置则是必须的。
-音频文件也是可选添加的，不添加仅仅只会导致牛牛唱歌功能没有东西发出来而已。
+如果您想要牛牛偷群u的id，那么请在对应目录下，修改期望概率，这是可选的，其他api key或者缓存目录设置则是必须的。<br>
+音频文件也是可选添加的，不添加仅仅只会导致牛牛唱歌功能没有东西发出来而已。<br>
 
 ### API密钥配置
-在src\plugins\chat目录下，修改代码添加您自己的文心key和deepseek key。
+在src\plugins\chat目录下，修改代码添加您自己的文心key和deepseek key。<br>
 在src\plugins\dream目录下，修改代码添加您自己的文心key。
 
 ### 功能参数调整
 | 配置文件路径 | 功能说明 |
 |--------------|----------|
 | `src/plugins/nonebot_plugin_pallas_repeater/take_name/` | 名片夺取概率 |
-| `src/plugins/nonebot_plugin_pallas_repeater/repeater/` | 缓存目录设置 |
-| `resource/music/` | 添加自定义音频文件 |
+| `src/plugins/nonebot_plugin_pallas_repeater/repeater/` | 图片缓存目录 |
+| `resource/music/` | 自定义音频文件 |
 
 ## 🎮 功能列表
 
@@ -90,7 +96,7 @@
 - `牛牛我问你` 调用文心模型简单问答
 - `牛牛锐评一下` 巨好玩的，调用ds-r1模型进行中肯的、一针见血的评价
 - `牛牛唱歌` 随机从资源库内挑选一个音频以语音形式发送出去
-- `牛牛轮盘` 开枪，崩！需要给牛牛管理员才能使用，目前只做了禁言模式，主要我觉得也没人玩踢人的
+- `牛牛轮盘` 开枪，砰！需要给牛牛管理员才能使用，目前只做了禁言模式，主要我觉得也没人玩踢人的
 
 
 
@@ -100,5 +106,3 @@
 
 ## 📄 协议
 本项目采用 [MIT License](LICENSE)
-```
-
